@@ -37,31 +37,83 @@
                 <img  height="100px" src="img/animador.jpg" alt="Servicio de animador">
             
             <h2>Tablas</h2>
-            <table>
+            <table border="1">
                 <thead>
                     <tr> <!--fila: no se escribe, solo orden-->
                         <th>Encabezado: Cliente</th>
                         <th>Salon</th>
+                        <th>Servicio</th>
+                        <th>Total</th>
                     </tr>
 
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Shimshon</td>
-                        <td>Grande</td>
+                        <!-- combinacion de filas rowspan y eliminar la fila 2-->
+                        <td rowspan="2">Shimshon</td>
+                        <!--combinacion de columnas-->
+                        <!--td colspan="2">Grande</td> y se eimina otra fila-->
+                        <td >Grande</td>
                         <td>Banda en vivo</td>
                         <td>200000</td>
                     </tr>
-
+                    <tr>
+                        <!--eliminar esta fila 2 en rowspan-->
+                        <td>Normal</td>
+                        <td>Animador</td>
+                        <td>100000</td>
+                    </tr>
                 </tbody>
                 <tfoot>
-
+                    
                 </tfoot>
-
+                
             </table>
-            </main>
+            <br>
+                <h2>Formulario</h2>
+                <!--action envia a otra direccion, # provisional-->
+                <form action="#" method="post"></form><!--for="donde se dirige los datos, # es null"-->
+                <label for="fecha">Fecha</label>
+                <input type="date" name="fecha">
+                <label for="cliente">Cliente</label> 
+                <input required type="text" name="cliente" value="dato" placeholder="Escriba su nombre"/>
+                <label for="cantidad_meseros">Meseros extras</label>
+                <input type="number" name="cantidad_meseros" placeholder="Numero de meseros">
+                <br>
+                <input type="radio" name="salon" value="N">Normal
+                <input type="radio" name="salon" value="G">Grande
+                <br>
+                <input type="checkbox" name="servicios[]" value="1">Animador
+                <input type="checkbox" name="servicios[]" value="2">Sonido
+                <input type="checkbox" name="servicios[]" value="3">DJ
+                <input type="checkbox" name="servicios[]" value="4">Banda en vivo
+                <input type="checkbox" name="servicios[]" value="5">Organizador
+                <br>
+                <label for="vino">Tipo de vino</label>
+                <select name="vino">
+                    <option value="-1">Seleccione el tipo de vino</option>
+                    <option value="1">Tinto</option>
+                    <option value="2">Rose</option>
+                    <option value="3">Blanco</option>
+                    <option value="4">Espumoso</option>
+                </select>
+                <br>
+                <label for="observaciones">Observaciones</label>
+                <textarea name="observaciones" cols="30" rows="10" placeholder="Observaciones"></textarea>
+                <br>
+                <input type="button" value="Boton">
+                <button type="reset">Reinicia</button>
+                <br>
+                <input type="submit" value="Envia">
+                <button type="submit">Envia</button>
+                <br>
+        </main>
     <footer>
         <!--Pie de pagina-->
+        <br>
+        <br>
+        <br>
+
     </footer>
 
 </html>
