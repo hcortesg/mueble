@@ -1,0 +1,28 @@
+/* archivo css
+*/
+
+#titulo_enlaces{
+    color: blue;
+    background-color: lightyellow;
+    font-size: 12;
+    text-align: center;
+
+}
+
+
+.fondo_gray{
+    background-color: lightslategrey;
+    color: white;
+    font-size: 14px;
+}
+main{
+    background-color: rgb(255, 226, 230);
+}
+
+h1{
+    color: green;
+}
+h2{
+    color: forestgreen;
+    font-size: 14px;
+}

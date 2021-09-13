@@ -1,8 +1,27 @@
 <!DOCTYPE html>
 <html>
+    <head>
     <title>Etiquetas html</title>   
     <meta  http-equiv="Content-Type" content="text/html">
     <meta  lang="es" charset="utf-8" >
+    <link rel="stylesheet" href="css/estilos.css">
+        <!--cascading style sheet
+            1. Archivo externo(local o remota)
+            2. Etiqueta (dentro de head)
+
+        seleccion{
+            atributo o caracteristica: valor;
+        }  
+        Jerarquia
+        1 Etiqueta: body, h1..
+        2 Clase o atributo (atributo class)
+        3 ID (atributo id)
+        4 Atributo style: etiqueta  
+        -->
+
+
+    </head>
+    <body>
     <header>
         <!--Logo, iconos,imagenes -->
         <h1>
@@ -19,8 +38,8 @@
         <!--Contenido principal-->
             <h1>Salon de Eventos Online</h1>
             <h2>Listas</h2>
-                <a href="https://github.com" target="_blank">Ir a gitHub</a>
-                <a href="registro.html" target="etiquetas.html">Registrar Evento</a>
+                <a href="https://github.com" target="_blank" id="titulo_enlaces">Ir a gitHub</a>
+                <a href="registro.html" target="etiquetas.html" id="titulo_enlaces">Registrar Evento</a>
             <h3>Ordenadas</h3>
             <ol>
                 <li>Salon Normal</li>
@@ -33,13 +52,13 @@
                     <li>Organizador</li>
                     <li>Banda en vivo</li>
                 </ul>
-            <h5>Titulo</h5>
+            <h5 style="color: green;">Titulo</h5>
                 <img  height="100px" src="img/animador.jpg" alt="Servicio de animador">
             
             <h2>Tablas</h2>
             <table border="1">
                 <thead>
-                    <tr> <!--fila: no se escribe, solo orden-->
+                    <tr class="fondo_gray"> <!--fila: no se escribe, solo orden-->
                         <th>Encabezado: Cliente</th>
                         <th>Salon</th>
                         <th>Servicio</th>
@@ -115,6 +134,6 @@
         <br>
 
     </footer>
-
+</body>
 </html>
 
