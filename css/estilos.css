@@ -1,9 +1,26 @@
 /* archivo css
+cascada porque aplica las reglas hacia abajo
 */
-
+/*li dentro de la ul lista_servicios
+ o a dentro de li de ul lista de servicios
+ seria lista_servicios li a{}
+*/
+#lista_servicios li{
+    font-size: 14px;
+    background-color: floralwhite;
+    margin-bottom: 2px;
+}
+/* pseudoclase
+active cuando hace click
+link: no ha sido visitado
+visited: ya se visitio 
+*/
+a:hover{
+    background-color: lightpink;
+}
 #titulo_enlaces{
     color: blue;
-    background-color: lightyellow;
+    background-color: floralwhite;
     font-size: 12;
     text-align: center;
 

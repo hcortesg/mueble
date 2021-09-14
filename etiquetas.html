@@ -4,7 +4,29 @@
     <title>Etiquetas html</title>   
     <meta  http-equiv="Content-Type" content="text/html">
     <meta  lang="es" charset="utf-8" >
-    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        *{
+            margin: 2px;
+            padding: 2px;
+        }
+        main{
+            border: 2px solid pink;
+            margin: auto;
+            width: 80%;
+        }
+        header{
+            border: 1px solid lightgray;
+            margin: auto;
+            width: 80%;
+        }
+        footer{
+            background-color: black;
+            border: 1px solid darkgrey;
+            margin: auto;
+            width: 80%;
+        }
+    </style>
+    <!--<link rel="stylesheet" href="css/estilos.css">-->
         <!--cascading style sheet
             1. Archivo externo(local o remota)
             2. Etiqueta (dentro de head)
@@ -46,11 +68,13 @@
                 <li>Salon Grande</li>
             </ol>
             <h4>Desordenadas</h4>
-                <ul type="square">
+                <ul type="square" id="lista_servicios">
                     <li>Animador</li>
                     <li>DJ</li>
                     <li>Organizador</li>
                     <li>Banda en vivo</li>
+
+                    <a href="elige.html">Elija servicio</a>
                 </ul>
             <h5 style="color: green;">Titulo</h5>
                 <img  height="100px" src="img/animador.jpg" alt="Servicio de animador">
